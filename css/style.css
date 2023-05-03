@@ -2,15 +2,12 @@
     padding: 0;
     margin: 0;
 }
-body {
-    font-family: 'Inter', sans-serif;
-    background-image: url(../img/background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
+.container{
+    width: auto;
+}
 .contenedor {
-    width: 100%;
+    width: auto;
     height: 100%;
     max-width: 1440px;
     margin: auto;
@@ -28,7 +25,7 @@ body {
     height: 50px;
     left: 140px;
     top: 30px;
-    color: #fff;
+    color: #0A3871;
     font-weight: bold;
 }
 
@@ -59,7 +56,7 @@ body {
     margin-left: 50px;
     font-size: 32px;
     line-height: 48px;
-    color: #fff;
+    color: #0A3871;
     background-color: transparent;
     resize: none;
     border: none;
@@ -71,7 +68,7 @@ body {
 }
 
 #texto::-webkit-input-placeholder {
-    color: #fff;
+    color: #0A3871;
 }
 
 .texto_info{
@@ -95,7 +92,7 @@ body {
 .info p {
     margin-left: 8px;
     display: inline-block;
-    color: #fff;
+    color: #0A3871;
 }
 .info i {
     margin-right: 10px;
@@ -126,16 +123,17 @@ body {
     transform: scale(1.2);
 }
 .btn_encriptar:active {
-    background: #041121;
+    background: #fff;
 }
 .btn_desencriptar {
     padding: 20px;
     position: relative;
     margin-left: 30px;
     width: 40%;
-    background: #fff;
+    background: #0A3871;
     border-radius: 25px ;
     border: 1px solid #0A3871;
+    color: #fff;
 }
 .btn_desencriptar img {
     position: relative;
@@ -159,17 +157,16 @@ body {
     width: 90%;
     min-width: 300px;
     height: 100%;
-    background: #fff;
+    background: #cacaca;
     position: relative;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-radius: 20px;
- }
-
- 
- .imagen_resultado {
+    box-shadow: 5px 5px 9px;
+}
+.imagen_resultado {
     width: 180px;
     height: 250px;
     display: block;
@@ -223,7 +220,7 @@ body {
     position: relative;
     top: 90px;
     width: 60%;
-    background: #fff;
+    background: #0A3871;
     border-radius: 25px ;
     border: 1px solid #0A3871;
     color: #0A3871;
@@ -240,30 +237,6 @@ body {
     top: 2px; 
     right: 10px;
 }
-
-
-footer {
-    padding: 20px;
-    text-align: center;
-}
-
-.copyright {
-    color: #052751;
-    font-size: 17px;
-    margin: 80px;
-    font-weight: 600;
-}
-
-.copyright a {
-    text-decoration: none;
-    font-style: normal;
-    color: #052751;
-}
-
-.copyright a:hover {
-    color: #0c4c9a;
-}
-
 @media screen and (max-width: 860px){
     
     .encriptador {
