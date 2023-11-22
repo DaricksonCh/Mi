@@ -9,9 +9,7 @@ import tipo_productoRouter from './backend/src/routes/tipo_producto.routes.js';
 import categoria_productoRouter from './backend/src/routes/categoria_producto.routes.js';
 import unidadProductiva from './backend/src/routes/unidadProductiva.routes.js';
 import autRouter from './backend/src/routes/autentificacion.routes.js';
-
-
-const path = require('path');
+import path from 'path'; 
 
 
 
