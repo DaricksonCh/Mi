@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon igs.js",
-    "start":"node ./igs.js"
+    "start":"node igs.js"
   },
   "keywords": [],
   "author": "",
