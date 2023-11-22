@@ -10,3 +10,5 @@ unidadProductivaRouter.get("/listar", listarUnidadProductiva );
 unidadProductivaRouter.put("/editar/:id",/* validatorUnidad_productiva, validarToken, */ editarUnidadProductiva );
 
 export default unidadProductivaRouter;
+
+
