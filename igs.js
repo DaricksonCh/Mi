@@ -10,6 +10,11 @@ import categoria_productoRouter from './backend/src/routes/categoria_producto.ro
 import unidadProductiva from './backend/src/routes/unidadProductiva.routes.js';
 import autRouter from './backend/src/routes/autentificacion.routes.js';
 
+
+const path = require('path');
+
+
+
 const port = 3000;
 
 const igs = express();
@@ -30,7 +35,11 @@ igs.get('/documents', (req,res) => {
     res.render('index.ejs');
 });
 
+igs.use(express.static(path.join(__dirname,'frontend')));
 
+igs.use('/',(req,res)=>{
+    res.sendFile(path.join(__dirname,'frontend','index.html'));
+})
 
 igs.use(express.json()); 
 
