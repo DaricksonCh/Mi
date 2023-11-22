@@ -10,7 +10,11 @@ import categoria_productoRouter from './backend/src/routes/categoria_producto.ro
 import unidadProductiva from './backend/src/routes/unidadProductiva.routes.js';
 import autRouter from './backend/src/routes/autentificacion.routes.js';
 import path from 'path'; 
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 
 const port = 3000;
