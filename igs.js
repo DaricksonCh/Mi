@@ -38,7 +38,7 @@ igs.get('/documents', (req,res) => {
     res.render('index.ejs');
 });
 
-igs.use(express.static('public'));
+igs.use(express.static('frontend'));
 
 // igs.use(express.static(path.join(__dirname,'frontend')));
 
