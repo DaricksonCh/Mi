@@ -9,13 +9,6 @@ import tipo_productoRouter from './backend/src/routes/tipo_producto.routes.js';
 import categoria_productoRouter from './backend/src/routes/categoria_producto.routes.js';
 import unidadProductiva from './backend/src/routes/unidadProductiva.routes.js';
 import autRouter from './backend/src/routes/autentificacion.routes.js';
-// import path from 'path'; 
-// import { fileURLToPath } from 'url';
-// import { dirname, join } from 'path';
-
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = dirname(__filename);
-
 
 
 const port = 3000;
@@ -40,12 +33,6 @@ igs.get('/documents', (req,res) => {
 
 igs.use(express.static('frontend'));
 
-// igs.use(express.static(path.join(__dirname,'frontend')));
-
-// igs.use('/',(req,res)=>{
-//     res.sendFile(path.join(__dirname,'frontend','index.html'));
-// })
-
 igs.use(express.json()); 
 
 igs.use('/facturamovimiento',facturaMovimientoRoute);
@@ -69,3 +56,16 @@ igs.listen(3000,()=>{
 })
 
 
+// import path from 'path'; 
+// import { fileURLToPath } from 'url';
+// import { dirname, join } from 'path';
+
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = dirname(__filename);
+
+
+// igs.use(express.static(path.join(__dirname,'frontend')));
+
+// igs.use('/',(req,res)=>{
+//     res.sendFile(path.join(__dirname,'frontend','index.html'));
+// })
