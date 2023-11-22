@@ -17,6 +17,7 @@ import autRouter from './backend/src/routes/autentificacion.routes.js';
 // const __dirname = dirname(__filename);
 
 
+
 const port = 3000;
 
 const igs = express();
@@ -36,6 +37,8 @@ igs.use(express.static('../igs/backend/src/views/js'))
 igs.get('/documents', (req,res) => {
     res.render('index.ejs');
 });
+
+igs.use(express.static('public'));
 
 // igs.use(express.static(path.join(__dirname,'frontend')));
 
