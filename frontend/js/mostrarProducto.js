@@ -1,7 +1,7 @@
 
 
 function listarProductos(){
-	fetch('http://localhost:3000/producto/listar',
+	fetch('https://darickson-igs.onrender.com/producto/listar',
 	{
 			method:'GET'
 	})
